@@ -1,11 +1,16 @@
 import models.Auto;
 
 public class MainRunner {
-//    psvm Скорочене створення методу Main
+    //    psvm Скорочене створення методу Main
     public static void main(String[] args) {
 
-        //    Змінні
-        String str = "Рядок";
+
+        //    Числа зі плаваючою крапкою
+        float f1 = -1.1f;
+        double d1 = -1.1;
+        //    Логічна змінна
+        boolean check = true;
+        Integer i1 = 154;
         //    Символ
         char ch = 'c';
         //     Числа
@@ -13,17 +18,17 @@ public class MainRunner {
         short sh = 22222;
         int i = 222222222;
         long l = 2222222222222222222l;
-        //    Числа зі плаваючою крапкою
-        float f1 = -1.1f;
-        double d1 = -1.1;
-        //    Логічна змінна
-        boolean check = true;
-//
 
+        int temp = (int) l;
+        long tempLong = (long) temp;
+        //    Змінні
+        String s = String.valueOf(l);
+        long convertFromString = Long.parseLong(s);
 
         Auto autoMercedes = new Auto();
-        autoMercedes.driveForward(5);
-
-
+        autoMercedes.driveForward(i);
+        autoMercedes.driveForward(l);
+        autoMercedes.driveForward(s);
+        autoMercedes.driveForward(convertFromString);
     }
 }
