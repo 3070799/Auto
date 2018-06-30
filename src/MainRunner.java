@@ -16,6 +16,8 @@ public class MainRunner {
         short sh = 22222;
         int i = 222222222;
         long l = 2222222222222222222l;
+        //      Строки
+        String s = String.valueOf(l);
 
 //        Перетворення змінних
         int temp = (int) l;
@@ -24,7 +26,6 @@ public class MainRunner {
         long convertToLongFromFloat = (long) f1;
         long convertToLongFromDouble = (long) d1;
         long tempLong = (long) temp;
-        String s = String.valueOf(l);
         long convertFromString = Long.parseLong(s);
 
         Auto autoMercedes = new Auto();
